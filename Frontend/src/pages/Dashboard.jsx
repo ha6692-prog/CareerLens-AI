@@ -63,11 +63,14 @@ export default function Dashboard() {
                         <span className="text-xs text-blue-600 font-medium mt-3 inline-block">Go →</span>
                     </div>
 
-                    <div className="bg-white rounded-2xl shadow p-6 border border-gray-100 opacity-60">
+                    <div
+                        onClick={() => navigate('/analysis')}
+                        className="bg-white rounded-2xl shadow p-6 border border-gray-100 cursor-pointer hover:shadow-md hover:border-blue-200 transition"
+                    >
                         <div className="text-3xl mb-3">🧠</div>
                         <h3 className="font-semibold text-gray-800 mb-1">AI Analysis</h3>
                         <p className="text-sm text-gray-500">Paste a job description and get your match score</p>
-                        <span className="text-xs text-blue-600 font-medium mt-3 inline-block">Coming next</span>
+                        <span className="text-xs text-blue-600 font-medium mt-3 inline-block">Go →</span>
                     </div>
                 </div>
             </main>
